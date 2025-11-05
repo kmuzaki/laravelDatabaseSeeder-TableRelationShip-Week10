@@ -21,6 +21,7 @@ class ProjectFactory extends Factory
             'image' => fake()->imageUrl(),
             'details' => fake()->paragraph(),
             'url' => fake()->url(),
+            'user_id' => \App\Models\User::factory()
         ];
     }
 }

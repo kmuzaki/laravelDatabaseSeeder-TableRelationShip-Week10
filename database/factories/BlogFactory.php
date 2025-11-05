@@ -20,6 +20,7 @@ class BlogFactory extends Factory
             'title' => fake()->word(),
             'category' => fake()->word(),
             'details' => fake()->sentence(),
+            'user_id' => \App\Models\User::factory()
         ];
     }
 }
